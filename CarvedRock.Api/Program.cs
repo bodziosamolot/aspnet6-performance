@@ -107,6 +107,9 @@ if (app.Environment.IsDevelopment())
         options.OAuthAppName("CarvedRock API");
         options.OAuthUsePkce();
     });
+    
+    System.Net.ServicePointManager.ServerCertificateValidationCallback += 
+        (sender, certificate, chain, sslPolicyErrors) => true;
 }
 
 app.UseResponseCompression();

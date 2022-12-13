@@ -22,6 +22,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.Benchmarking", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarvedRock.LoadTest", "CarvedRock.LoadTest\CarvedRock.LoadTest.csproj", "{5B43B822-734F-4A61-89BB-EA6949D7B00E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{D61AB49A-0D61-4C21-9664-7A8BF293B916}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\run-redis.ps1 = Scripts\run-redis.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

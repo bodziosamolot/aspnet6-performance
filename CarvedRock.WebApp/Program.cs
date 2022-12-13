@@ -70,6 +70,12 @@ builder.Services.AddResponseCompression(options =>
 
 var app = builder.Build();
 
+if (app.Environment.IsDevelopment())
+{
+    System.Net.ServicePointManager.ServerCertificateValidationCallback += 
+        (sender, certificate, chain, sslPolicyErrors) => true;
+}
+
 app.UseExceptionHandler("/Error");
 
 //app.UseResponseCompression();
